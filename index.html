@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>NINE CLOUD Hosting</title>
@@ -26,6 +27,12 @@
                 <a href="" class="nav__link">contacts</a>
             </nav>
             <button class="header__button">login</button>
+
+            <!-- burger -->
+            <button class="burger">
+                <span class="burger__item">Menu</span>
+            </button>
+
         </div>
     </div><!--/.container-->
 </header><!--/.header-->
@@ -44,27 +51,27 @@
 </div><!--/.intro-->
 
 
-<!-- Features -->
-<div class="features">
+<!-- Services -->
+<div class="services">
     <div class="container">
-        <div class="features__inner">
+        <div class="services__inner">
 
-            <div class="features__item">
-                <img src="img/features-1.png" alt="" class="item__logo">
+            <div class="services__item">
+                <img src="img/services-1.png" alt="" class="item__logo">
                 <h1 class="item__title">99,9% uptime guarante</h1>
                 <div class="item__text">Disk space in all packages has been increased by ten times! </div>
                 <a href="" class="item__link">read more</a>
             </div>
 
-            <div class="features__item">
-                <img src="img/features-2.png" alt="" class="item__logo">
+            <div class="services__item">
+                <img src="img/services-2.png" alt="" class="item__logo">
                 <h1 class="item__title">managed services</h1>
                 <div class="item__text">Leave the set up, management and monitoring to us. </div>
                 <a href="" class="item__link">read more</a>
             </div>
 
-            <div class="features__item">
-                <img src="img/features-3.png" alt="" class="item__logo">
+            <div class="services__item">
+                <img src="img/services-3.png" alt="" class="item__logo">
                 <h1 class="item__title__last">cloud services</h1>
                 <div class="item__text">Reliable, high- performance cloud that meets your changing business demands.</div>
                 <a href="" class="item__link">read more</a>
@@ -72,7 +79,7 @@
 
         </div>
     </div><!--/.container-->
-</div><!--/.features-->
+</div><!--/.services-->
 
 
 <!-- Search -->
@@ -83,33 +90,330 @@
             <div class="search__tax">Save big on domain options like .com, .co, .biz, .net, .org and grab new domains like .xyz,
 .club, .guru, .email, .link, .today, and more!</div>
             <form action="" class="search__form">
-                <input placeholder="domain.com" type="text" class="search__input">
-                <a href="" class="search__form__btn">find domain</a>
+                <input placeholder="domain.com" type="text" class="search__input" id="search_input">
+                <label class="search__form__btn" for="search_input"><a href="" class="search__form__btn__link">find domain</a></label>
             </form>
             <div class="search__items">
 
                 <div class="search__item">
                     <img src="img/search-img-1.png" alt="" class="search__item__logo">
-                    <h3 class="search__item__title">find domain</h3>
-                    <div class="search__item__text">Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</div>
+                    <div class="search__text">
+                        <h3 class="search__item__title">find domain</h3>
+                        <div class="search__item__text">Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</div>
+                    </div>
                 </div>
 
                 <div class="search__item">
                     <img src="img/search-img-2.png" alt="" class="search__item__logo">
-                    <h3 class="search__item__title">choose a plan</h3>
-                    <div class="search__item__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</div>
+                    <div class="search__text">
+                        <h3 class="search__item__title">choose a plan</h3>
+                        <div class="search__item__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</div>
+                    </div>
                 </div>
 
                 <div class="search__item">
                     <img src="img/search-img-3.png" alt="" class="search__item__logo">
-                    <h3 class="search__item__title">build your website</h3>
-                    <div class="search__item__text">Curabitur imperdiet enim id faucibus sollicitudin. </div>
+                    <div class="search__text">
+                        <h3 class="search__item__title">build your website</h3>
+                        <div class="search__item__text">Curabitur imperdiet enim id faucibus sollicitudin. </div>
+                    </div>
                 </div>
 
             </div><!--/.search__items-->
         </div><!--/.search__inner-->
     </div><!--/.container-->
 </div><!--/.search-->
+
+
+<!-- Features -->
+<div class="features">
+    <div class="container">
+        <div class="features__inner">
+            <h1 class="features__title">Features</h1>
+            <div class="features__items">
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-1.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">made with love</h2>
+                        <div class="features__item-text">Curabitur imperdiet enim id faucibus sollicitudin. </div>
+                    </div>
+                </div>
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-2.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">databases</h2>
+                        <div class="features__item-text">Curabitur imperdiet enim id faucibus sollicitudin. </div>
+                    </div>
+                </div>
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-3.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">vps server</h2>
+                        <div class="features__item-text">Phasellus aliquam arcu quis lectus aliquam, sed dignissim ligula efficitur. </div>
+                    </div>
+                </div>
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-4.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">fully secured</h2>
+                        <div class="features__item-text">Phasellus aliquam arcu quis lectus aliquam efficitur.</div>
+                    </div>
+                </div>
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-5.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">daily backups</h2>
+                        <div class="features__item-text">Aliquam nisl lectus, rhoncus nec ex vestibulum. </div>
+                    </div>
+                </div>
+
+                <div class="features__item">
+                    <img src="img/features-icons/features-6.png" alt="" class="features__item-logo">
+                    <div class="feature__text">
+                        <h2 class="features__item-title">cloud hosted</h2>
+                        <div class="features__item-text">Etiam sagittis tellus at lacus cursus, non molestie nulla.</div>
+                    </div>
+                </div>
+
+            </div><!--/.features__items-->
+        </div><!--/.features__inner-->
+    </div><!--/.container-->
+</div><!--/.features-->
+
+
+<!-- Plan -->
+<div class="plan">
+    <div class="container">
+        <div class="plan__inner">
+            <h1 class="plan__title">Pick your plan</h1>
+            <h6 class="plan__subtitle">Upgrade, downgrade or cancel anytime.</h6>
+            <div class="plan__items">
+
+                <div class="plan__item">
+                    <h3 class="plan__item-title">personal</h3>
+                    <h6 class="plan__item-subtitle">Perfect Pack for Small Business</h6>
+                    <hr class="plan__item-border">
+                    <h1 class="plan__item-price"><sup class="dollar">$</sup>25<span class="month">/mo</span></h1>
+                    <ul class="plan__item-list">
+                        <li class="plan__item-list-item"><strong>3 Gb </strong>of storage</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>repositories</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>parcked domains</li>
+                        <li class="plan__item-list-item"><strong>25 ftp </strong>accounts</li>
+                    </ul>
+                    <a href="" class="plan__item-btn">order now</a>
+                </div>
+
+                <div class="plan__item">
+                    <h3 class="plan__item-title">business</h3>
+                    <h6 class="plan__item-subtitle">Perfect Pack for Small Business</h6>
+                    <hr class="plan__item-border">
+                    <h1 class="plan__item-price"><sup class="dollar">$</sup>45<span class="month">/mo</span></h1>
+                    <ul class="plan__item-list">
+                        <li class="plan__item-list-item"><strong>3 Gb </strong>of storage</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>repositories</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>parcked domains</li>
+                        <li class="plan__item-list-item"><strong>25 ftp </strong>accounts</li>
+                    </ul>
+                    <a href="" class="plan__item-btn">order now</a>
+                </div>
+
+                <div class="plan__item">
+                    <h3 class="plan__item-title">personal</h3>
+                    <h6 class="plan__item-subtitle">Perfect Pack for Small Business</h6>
+                    <hr class="plan__item-border">
+                    <h1 class="plan__item-price"><sup class="dollar">$</sup>65<span class="month">/mo</span></h1>
+                    <ul class="plan__item-list">
+                        <li class="plan__item-list-item"><strong>3 Gb</strong>of storage</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>repositories</li>
+                        <li class="plan__item-list-item"><strong>10 </strong>parcked domains</li>
+                        <li class="plan__item-list-item"><strong>25 ftp </strong>accounts</li>
+                    </ul>
+                    <a href="" class="plan__item-btn">order now</a>
+                </div>
+
+            </div><!--/.plan__items-->
+            <div class="under-text">If you need help finding a plan that’s right for you, just <a href="">chat with a live person</a>.
+           </div>
+        </div><!--/.plan__inner-->
+    </div><!--/.container-->
+</div><!--/.plan-->
+
+
+<!-- Testimonials -->
+<div class="container">
+    <div class="testimonials">
+        <h1 class="testimonials__title">Testimonials</h1>
+        <h3 class="testimonials__subtitle">Couple of words about this sections</h3>
+        <img src="img/coma.png" alt="" class="testimonials__coma">
+        <div class="testimonials__text">The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</div>
+        <img src="img/author-img.png" alt="" class="testimonials__author-img">
+        <div class="testimonials__author">Oscar Wild,  Pragmatic Solutions</div>
+    </div><!--/.testimonials-->
+</div><!--/.container-->
+
+
+<!-- Blog -->
+<div class="container">
+    <div class="blog">
+        <h1 class="blog__title">Company Blog</h1>
+        <div class="blog__items">
+
+            <div class="blog__item">
+               <div class="blog__text-section">
+                    <h3 class="blog__item-title">How does the Internet Create Potential </h3>
+                    <div class="blog__item-items">
+                        <div class="item-data">06 January, 2014</div>
+                        <div class="item-comments">6 comments</div>
+                        <div class="blog-likes">
+                            <img src="img/like.png" alt="" class="likes-logo">
+                            <div class="likes-num">12</div>
+                        </div>
+                    </div>
+                    <div class="blog__item-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo...  <a href="" class="blog__item-text-link">Read More</a></div>
+                </div>
+                <img src="img/blog-1.jpg" alt="" class="blof__item-img">
+            </div>
+
+            <div class="blog__item">
+               <div class="blog__text-section">
+                    <h3 class="blog__item-title">How does the Internet Create Potential </h3>
+                    <div class="blog__item-items">
+                        <div class="item-data">06 January, 2014</div>
+                        <div class="item-comments">6 comments</div>
+                        <div class="blog-likes">
+                            <img src="img/like.png" alt="" class="likes-logo">
+                            <div class="likes-num">12</div>
+                        </div>
+                    </div>
+                    <div class="blog__item-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo...  <a href="" class="blog__item-text-link">Read More</a></div>
+                </div>
+                <img src="img/blog-2.jpg" alt="" class="blof__item-img">
+            </div>
+
+            <div class="blog__item">
+               <div class="blog__text-section">
+                    <h3 class="blog__item-title">How does the Internet Create Potential </h3>
+                    <div class="blog__item-items">
+                        <div class="item-data">06 January, 2014</div>
+                        <div class="item-comments">6 comments</div>
+                        <div class="blog-likes">
+                            <img src="img/like.png" alt="" class="likes-logo">
+                            <div class="likes-num">12</div>
+                        </div>
+                    </div>
+                    <div class="blog__item-text">Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo...  <a href="" class="blog__item-text-link">Read More</a></div>
+                </div>
+                <img src="img/blog-3.jpg" alt="" class="blof__item-img">
+            </div>
+
+        </div><!--/.blog__items-->
+        <a href="" class="blog__btn">show more</a>
+    </div><!--/.blog-->
+</div><!--/.container-->
+
+
+<!-- Map -->
+<div class="map">
+    <div class="container">
+      <a target="_blank" href="https://www.google.com/maps/place/Lviv+Polytechnic+College+of+Technology/@49.8021964,24.0222704,18.71z/data=!4m5!3m4!1s0x473ae7c25cf5e79f:0x1f89265f71978a90!8m2!3d49.8021275!4d24.0226002"><img src="img/map-img.png" alt="" class="map__img"></a>
+        <div class="map__inner">
+            <h1 class="map__title"><div class="">We are interested</div> in long-term cooperation</h1>
+            <div class="map__adress">
+            <div class="">100 William Street</div>
+            New York, New York 10038
+            </div>
+            <div class="map__data">Mon – Fri , 8 am – 5 pm</div>
+            <div class="map__contacts">
+                <div class="map__number">800-638-9996, 518-292-4500</div>
+                <div class="map__email">info@somecompany.com</div>
+            </div>
+        </div>
+    </div>
+</div><!--/.map-->
+
+
+<!-- Follow -->
+<div class="follow">
+    <div class="container">
+        <div class="follow__inner">
+            <div class="follow__inner-1">
+                <div href="" class="follow__inner-1-title">follow as on</div>
+                <nav class="follow__inner-1-nav">
+                    <img src="img/follow/Layer%2043.png" alt="" class="follow__img">
+                    <img src="img/follow/Layer%2042.png" alt="" class="follow__img">
+                    <img src="img/follow/Layer%2041.png" alt="" class="follow__img">
+                    <img src="img/follow/Layer%2040.png" alt="" class="follow__img">
+                </nav>
+            </div>
+
+            <div class="follow__inner-2">
+                <div href="" class="follow__inner-2-title">subscribe</div>
+                <form action="" class="follow__form">
+                    <input placeholder="Enter your e-mail here" type="text" class="follow__input" id="follow_input">
+                    <label class="follow__form__btn" for="follow_input"><a href="" class="follow__form__btn__link">send</a></label>
+                </form>
+            </div>
+        </div><!--/.follow__inner-->
+    </div><!--/.container-->
+</div><!--/.follow-->
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer__item">
+               <h3 class="footer__title">Solutions</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">Web Solutions Overview</li>
+                    <li class="footer__list__item">Email Marketing</li>
+                    <li class="footer__list__item">Website Promotion</li>
+                    <li class="footer__list__item">eCommerce Website</li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+               <h3 class="footer__title">Services</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">Shared Hosting</li>
+                    <li class="footer__list__item">Reseller Hosting</li>
+                    <li class="footer__list__item">Cloud Managed VPS</li>
+                    <li class="footer__list__item">Dedicated Servers</li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+               <h3 class="footer__title">support</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">Knowledge Base</li>
+                    <li class="footer__list__item">Support Request</li>
+                    <li class="footer__list__item">Client Area</li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+               <h3 class="footer__title">Legal Terms</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">Terms of Use</li>
+                    <li class="footer__list__item">Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <h2 class="footer-title">(044) 383 4389</h2>
+                <div class="fetter__email">support@cloudhost.com</div>
+                <div class="copyright">Copyright © 2015 Cloud Host.All rights reserved.</div>
+            </div>
+
+        </div><!--/.footer__inner-->
+    </div><!--/.container-->
+</footer><!--/.footer-->
 
 
 </body>
